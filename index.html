@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cokorda Istri Aulia Chandra Dewi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2d9d6a91f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+
+            <div class="hero-image">
+                <img src="website/Profile.jpg" alt="Profile Picture">
+            </div>
+
+            <div class="hero-text">
+                <h1>Cokorda Istri Aulia Chandra Dewi, S.Kom</h1>
+                <p class="role">Information Technology Student</p>
+
+                <div class="contact-buttons">
+                    <a href="mailto:cokaulia97@gmail.com" class="btn"><i class="fa-regular fa-envelope"></i> Gmail</a>
+                    <a href="https://github.com/" class="btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="http://www.linkedin.com/in/chocokieslia/" class="btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.instagram.com/chocokieslia" class="btn"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href="tel:08123456789" class="btn"><i class="fa-solid fa-phone"></i> Phone</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ============ ABOUT (2 kolom) ============ -->
+    <section id="about" class="section about">
+        <h2 style="margin-bottom: 30px;">About Me</h2>
+
+        <div style="display: flex; gap: 20px; align-items: flex-start; justify-content: center;">
+
+            <!-- LEFT TEXT -->
+            <div style="about-text;">
+                <p>Saya merupakan mahasiswa semester 5 jurusan 
+                    Teknologi Informasi yang berminat pada pengembangan 
+                    web sederhana, desain UI/UX, serta manajemen data. 
+                    Saya memiliki ketertarikan dalam memperdalam minat 
+                    saya untuk mempelajari serta mengembangkan pengetahuan 
+                    dalam bidang teknologi.</p>
+
+                <p>Berpengalaman dalam organisasi, kepanitiaan, dan pekerjaan 
+                    secara WFH membuat saya terbiasa bekerja  secara  terstruktur, 
+                    disiplin dan bertanggung jawab, serta mampu dalam mengasah skilll 
+                    seperti mengelola dokumen, laporan, dan komunikasi antar-divisi. 
+                    Pengalaman tersebut telah melatih saya untuk bekerja dalam tim dan
+                    mampu beradaptasi dengan lingkungan kerja yang dinamis.
+                </p>
+
+                <p>
+                    Kombinasi kemampuan teknis dan administratif membuat saya siap bekerja 
+                    profesional dan adaptif di industri digital.
+                </p>
+            </div>
+
+            <!-- RIGHT DOWNLOAD BOX -->
+            <div class="cv-wrapper">
+                <div class="cv-card">
+                    <div class="cv-icon">
+                        <img src="website/cv-icon.png" width="200px" height="100px" srcset="">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                </div> 
+                <h3 style="color:#d63f84;">Download CV</h3>
+                <p style="font-size:14px; margin-top:-8px;">Klik tombol di bawah</p>
+
+                <div style="display:flex; flex-direction:column; gap:12px; margin-top:15px;">
+                 <!-- PREVIEW -->
+                    <button class="btn" onclick="openCV()">
+                        <i class="fa-solid fa-eye"></i> Preview CV
+                    </button>
+
+                <a href="CV_Cokorda Istri Aulia Chandra Dewi.pdf" download class="btn" style="margin-top:10px; display:block; text-align:center;">
+                    <i class="fa-solid fa-download"></i> Download
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="subtitle">Latar belakang pendidikan saya</div>
+
+        <div class="exp-grid">
+            <div class="edu-card">
+                <i class="fa-solid fa-graduation-cap edu-icon"></i>
+                <h3>SMAN 9 Denpasar</h3>
+                <p>High School — (2018–2021)</p>
+            </div>
+
+            <div class="edu-card">
+                <i class="fa-solid fa-building-columns edu-icon"></i>
+                <h3>ITB STIKOM Bali</h3>
+                <p>Sarjana Informatika (S.Kom) — (2021–2025)</p>
+            </div>
+        </div>
+            <div id="cv-modal" class="modal">
+                <div class="modal-content cv-modal">
+                    <iframe src="CV_Cokorda Istri Aulia Chandra Dewi.pdf#view=FitH&toolbar=0" frameborder="0">
+                    </iframe>
+
+        <button class="close-modal" onclick="closeCV()">Tutup</button>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="subtitle">Pengalaman organisasi dan kepanitiaan</div>
+
+        <div class="exp-grid">
+
+            <div class="exp-card">
+                <i class="fa-solid fa-wallet exp-icon"></i>
+                <h3>Bendahara I Family Gathering - Dec 2024</h3>
+                <p>Mengelola keuangan dan membuat laporan kegiatan.</p>
+                
+                <button class="btn proof-btn"
+                    onclick="openModal('website/Bendahara_Famgath.jpg')">
+                        Lihat Bukti
+                </button>
+            </div>
+
+            <div class="exp-card">
+                <i class="fa-solid fa-wallet exp-icon"></i>
+                <h3>Bendahara II Gebyar Teknologi Informasi - Feb 2025</h3>
+                <p>Membantu administrasi dana dan dokumentasi keuangan.</p>
+
+                <button class="btn proof-btn"
+                    onclick="openModal('website/Bendahara_GebyarTi.jpg')">
+                        Lihat Bukti
+            </div>
+
+            <div class="exp-card">
+                <i class="fa-solid fa-gamepad exp-icon"></i>
+                <h3>Bendahara I (Event Game)</h3>
+                <p>Mengelola dana event, pencatatan sponsor, dan laporan akhir.</p>
+            </div>
+
+            <div class="exp-card">
+                <i class="fa-solid fa-user-pen exp-icon"></i>
+                <h3>Koordinator Kesekretariatan</h3>
+                <p>Administrasi dokumen kegiatan, surat menyurat, dan laporan.</p>
+            </div>
+
+            <div class="exp-card">
+                <i class="fa-solid fa-users exp-icon"></i>
+                <h3>Admin Jawara Swimming Club</h3>
+                <p>Mengelola data anggota, pendaftaran, dan update jadwal latihan.</p>
+            </div>
+
+        </div>
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <img id="modal-img" alt="Bukti">
+                <button class="close-modal" onclick="closeModal()">Tutup</button>
+             </div>
+            </div>
+    </section>
+
+
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="subtitle">Kemampuan teknis & non-teknis</div>
+
+        <div class="skills-wrapper">
+
+            <div class="skill-card">
+                <i class="fa-solid fa-code skill-icon"></i>
+                <h3>Web Development</h3>
+                <div class="skill-tags">
+                    <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-pencil-ruler skill-icon"></i>
+                <h3>UI/UX Design</h3>
+                <div class="skill-tags">
+                    <span>Wireframe</span> <span>Prototype</span> <span>Figma</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-database skill-icon"></i>
+                <h3>Data Management</h3>
+                <div class="skill-tags">
+                    <span>MySQL</span> <span>Documentation</span> 
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+    <h2>Projects</h2>
+    <p class="subtitle">Beberapa project yang pernah saya kerjakan</p>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <i class="proj-icon fas fa-code"></i>
+            <h3>Website Laundry</h3>
+            <p>Sistem pemesanan laundry kiloan berbasis web.</p>
+            <a href="https://github.com/username/laundry-project" target="_blank">Lihat Project →</a>
+        </div>
+
+        <div class="project-card">
+            <i class="proj-icon fas fa-desktop"></i>
+            <h3>Aplikasi Kesehatan</h3>
+            <p>Aplikasi tracking kesehatan sederhana.</p>
+            <a href="https://github.com/username/health-app" target="_blank">Lihat Project →</a>
+        </div>
+    </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
