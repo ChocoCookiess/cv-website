@@ -9,13 +9,6 @@ Thumbs.db
 # ===== Logs =====
 *.log
 
-# ===== Dependency (jika suatu saat pakai Node) =====
-node_modules/
-
-# ===== Build / Cache =====
-dist/
-build/
-
 # ===== Environment (jika ada nanti) =====
 .env
 .env.local
